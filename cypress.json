@@ -1,0 +1,20 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "testFiles": "**/*.{feature,features,js}",
+  "ignoreTestFiles": [
+    "*.stories.js",
+    "*.step.js",
+    "*.feature",
+    "**/common/*",
+    "**/__snapshots__/*",
+    "**/__image_snapshots__/*"
+  ],
+  "video": false,
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "cypress/results/cypress-report.xml",
+    "toConsole": true
+  }
+}
