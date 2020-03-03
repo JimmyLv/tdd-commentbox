@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -24,51 +24,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>📚 ND 书架</title>
-    <!-- set `maximum-scale` for some compatibility issues -->
-    <!-- 强制显示方式 -->
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
-    <!-- 允许全屏 -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <!-- 顶端状态条样式 -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <!-- 忽略将数字变为电话号码 -->
-    <meta content="telephone=no" name="format-detection">
-    <!-- uc强制竖屏 -->
-    <meta name="screen-orientation" content="portrait">
-    <!-- qq强制竖屏 -->
-    <meta name="x5-orientation" content="portrait">
-    <!-- uc强制全屏 -->
-    <meta name="full-screen" content="yes">
-    <!-- qq强制全屏 -->
-    <meta name="x5-fullscreen" content="true">
-    <!-- uc应用模式 -->
-    <meta name="browsermode" content="application">
-    <!-- qq应用模式 -->
-    <meta name="x5-page-mode" content="app">
-    <!-- windows phone 点击无高光 -->
-    <meta name="msapplication-tap-highlight" content="no">
-    <script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
-    <script>
-      var winWidth = window.innerWidth;
-      var winHeight = window.innerHeight;
-      var perRemPx = document.getElementsByTagName("html")[0].clientWidth / 7.5;
-
-      window.addEventListener("resize", function () {
-        perRemPx = document.getElementsByTagName("html")[0].clientWidth / 7.5;
-        document.getElementsByTagName("html")[0].style.fontSize = perRemPx + "px";
-      });
-      document.getElementsByTagName("html")[0].style.fontSize = perRemPx + "px";
-
-      if ('addEventListener' in document && 'FastClick' in document) {
-        document.addEventListener('DOMContentLoaded', function() {
-          FastClick.attach(document.body);
-        }, false);
-      }
-      if(!window.Promise) {
-        document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
-      }
-    </script>
+    <title>TDD CommentBox</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
